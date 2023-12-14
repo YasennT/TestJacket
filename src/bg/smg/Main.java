@@ -15,7 +15,7 @@ public class Main {
         jackets.add(jacket3);
         Jacket jacket4 = new Jacket("Adidas","esen", 609);
         jackets.add(jacket4);
-        Collections.sort(jackets.);
+        Collections.sort(jackets);
         for(int i=0; i<4; i++){
             jackets.get(i).sell();
         }

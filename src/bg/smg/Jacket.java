@@ -2,7 +2,7 @@ package bg.smg;
 
 public class Jacket extends Clothes implements Comparable<Jacket>{
     private String brand, season;
-    private int price;
+    private double price;
     public Jacket(){}
     public Jacket(String brand, String season, int price) {
         this.brand = brand;
@@ -16,7 +16,7 @@ public class Jacket extends Clothes implements Comparable<Jacket>{
     }
     @Override
     public int compareTo(Jacket o) {
-        return 0;
+        return Double.compare(this.price, o.price);
     }
 //    public int compare(Integer j1, Integer j2) {
 //        j1.compare(this.price, j2.price);
@@ -39,7 +39,7 @@ public class Jacket extends Clothes implements Comparable<Jacket>{
         this.season = season;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
