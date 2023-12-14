@@ -18,10 +18,6 @@ public class Jacket extends Clothes implements Comparable<Jacket>{
     public int compareTo(Jacket o) {
         return Double.compare(this.price, o.price);
     }
-//    public int compare(Integer j1, Integer j2) {
-//        j1.compare(this.price, j2.price);
-//        return 0;
-//    }
 
     public String getBrand() {
         return brand;
